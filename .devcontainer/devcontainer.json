@@ -1,6 +1,18 @@
 {
   "name": "Universal - Latest",
-  "image": "mcr.microsoft.com/devcontainers/universal:latest"
-}git add '.devcontainer/devcontainer.json'
-git commit -m 'feat: Add codespace configuration'
-git push
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "features": {
+    "ghcr.io/davzucky/devcontainers-features-wolfi/python:1": {
+      "pythonVersion": "3.10",
+      "postCreateCommand": "bash .devcontainer/postCreate.sh"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.debugpy",
+        "ms-python.python"
+      ]
+    }
+  }
+}
