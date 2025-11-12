@@ -1,0 +1,6 @@
+{
+  "name": "Universal - Latest",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest"
+}git add '.devcontainer/devcontainer.json'
+git commit -m 'feat: Add codespace configuration'
+git push
